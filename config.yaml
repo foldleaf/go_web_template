@@ -1,0 +1,38 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  port: 8081
+  start_time: "2023-01-01"
+  machine_id: 1
+
+log:
+  # 日志级别
+  level: "debug"
+  #文件名
+  filename: "web_app.log"
+  # 文件最大大小（M）
+  max_size: 200
+  # 文件最大保存天数
+  max_age: 30
+  # 文件备份数量
+  max_backups: 7
+  
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "mysql123"
+  dbname: "sql_demo"
+  # 最大连接数
+  max_open_conns: 200
+  # 空闲连接数
+  max_idle_conns: 50
+
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
